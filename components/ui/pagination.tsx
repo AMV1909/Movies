@@ -53,7 +53,7 @@ const PaginationLink = ({
         size,
       }),
       className,
-      "hover:bg-black hover:text-white"
+      "hover:bg-black hover:text-white cursor-pointer"
     )}
     {...props}
   />

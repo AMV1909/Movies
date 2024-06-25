@@ -33,7 +33,6 @@ export function PaginationMovies() {
                         {page !== 1 && (
                             <PaginationItem>
                                 <PaginationPrevious
-                                    href="#"
                                     onClick={() => setPage(page - 1)}
                                 />
                             </PaginationItem>
@@ -42,10 +41,7 @@ export function PaginationMovies() {
                         {/* Render page number 1 if not already displayed */}
                         {page - 2 >= 1 && (
                             <PaginationItem className="hidden sm:block">
-                                <PaginationLink
-                                    href="#"
-                                    onClick={() => setPage(1)}
-                                >
+                                <PaginationLink onClick={() => setPage(1)}>
                                     1
                                 </PaginationLink>
                             </PaginationItem>
@@ -62,7 +58,6 @@ export function PaginationMovies() {
                         {page !== 1 && (
                             <PaginationItem className="hidden sm:block">
                                 <PaginationLink
-                                    href="#"
                                     onClick={() => setPage(page - 1)}
                                 >
                                     {page - 1}
@@ -72,9 +67,7 @@ export function PaginationMovies() {
 
                         {/* Render current page number */}
                         <PaginationItem>
-                            <PaginationLink href="#" isActive>
-                                {page}
-                            </PaginationLink>
+                            <PaginationLink isActive>{page}</PaginationLink>
                         </PaginationItem>
 
                         {/* Render next page number if not already displayed */}
@@ -82,7 +75,6 @@ export function PaginationMovies() {
                             <>
                                 <PaginationItem className="hidden sm:block">
                                     <PaginationLink
-                                        href="#"
                                         onClick={() => setPage(page + 1)}
                                     >
                                         {page + 1}
@@ -101,7 +93,6 @@ export function PaginationMovies() {
                                         {/* Render last page number if not already displayed */}
                                         <PaginationItem className="hidden sm:block">
                                             <PaginationLink
-                                                href="#"
                                                 onClick={() =>
                                                     setPage(maxPages)
                                                 }
@@ -115,7 +106,6 @@ export function PaginationMovies() {
                                 {/* Render next button if not on the last page */}
                                 <PaginationItem>
                                     <PaginationNext
-                                        href="#"
                                         onClick={() => setPage(page + 1)}
                                     />
                                 </PaginationItem>
