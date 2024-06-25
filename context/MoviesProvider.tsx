@@ -53,11 +53,14 @@ export function MoviesProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
         if (debounce !== undefined) {
             axios
-                .get(`${API_URL}?apikey=${API_KEY}&t=movie&s=${search}&page=${page}`)
+                .get(
+                    `${API_URL}?apikey=${API_KEY}&t=movie&s=${search}&page=${page}`
+                )
                 .then((res: { data: ISearchData }) => {
                     if (res.data.Search && res.data.totalResults) {
                         setMovies(res.data.Search);
                         setMaxPages(Math.ceil(res.data.totalResults / 10));
+                        setPage(1);
                     } else {
                         setMovies([]);
                         setMaxPages(1);
@@ -65,11 +68,14 @@ export function MoviesProvider({ children }: { children: ReactNode }) {
                 })
                 .catch((e) => console.log(e));
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [page, debounce]);
 
     // Provides the movies context to all child components
     return (
-        <MoviesContext.Provider value={{ movies, setSearch, page, setPage, maxPages }}>
+        <MoviesContext.Provider
+            value={{ movies, setSearch, page, setPage, maxPages }}
+        >
             {children}
         </MoviesContext.Provider>
     );
