@@ -29,6 +29,13 @@ export const metadata: Metadata = {
     ],
 };
 
+/**
+ * RootLayout is the main layout component of the application.
+ * It wraps the children components with the necessary providers and elements.
+ *
+ * @param children - The React children components to be rendered within the layout.
+ * @returns - The RootLayout component with the provided children.
+ */
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">

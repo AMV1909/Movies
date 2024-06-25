@@ -14,9 +14,9 @@ This is a technical test for the position of Junior Frontend Developer at [Kai E
 ## Technologies
 
 -   [Next.js](https://nextjs.org/): The react framework for the web
-- [Tailwindcss](https://v2.tailwindcss.com/): A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
-- [Shadcn/UI](https://ui.shadcn.com/): Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
-- [React Icons](https://react-icons.github.io/react-icons/): Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+-   [Tailwindcss](https://v2.tailwindcss.com/): A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+-   [Shadcn/UI](https://ui.shadcn.com/): Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+-   [React Icons](https://react-icons.github.io/react-icons/): Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
 ## Installation
 
@@ -32,13 +32,20 @@ git clone https://github.com/movies
 pnpm install
 ```
 
-3. Run the project
+3. Create a file named `.env.local` it the root of the project and write the environment variables
+
+```
+NEXT_PUBLIC_API_URL = "https://www.omdbapi.com/"
+NEXT_PUBLIC_API_KEY = "f708b440"
+```
+
+4. Run the project
 
 ```
 pnpm run dev
 ```
 
-4. For default, the page will be shown here. [Click me](http://localhost:3000)
+5. For default, the page will be shown here. [Click me](http://localhost:3000)
 
 ## Demo
 

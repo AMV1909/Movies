@@ -2,25 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilo general para la barra de desplazamiento */
+/* General style for the scroll bar */
 ::-webkit-scrollbar {
-    width: 8px; /* Ancho de la barra de desplazamiento vertical */
-    height: 12px; /* Altura de la barra de desplazamiento horizontal */
+    width: 8px; /* Vertical scroll bar width */
+    height: 12px; /* Horizontal scroll bar height */
 }
 
-/* Fondo de la barra de desplazamiento */
+/* Scroll bar background */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
 }
 
-/* Barra de desplazamiento */
+/* Scrollbar */
 ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
 
-/* Barra de desplazamiento cuando se pasa el cursor por encima */
+/* Scroll bar when hovered */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }

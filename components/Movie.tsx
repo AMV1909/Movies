@@ -1,8 +1,14 @@
 import Image from "next/image";
 import { HiOutlineEmojiSad } from "react-icons/hi";
-
 import type { IMovie } from "@/types";
 
+/**
+ * Movie component to display movie details.
+ *
+ * @param props - The props for the Movie component.
+ * @param props.movie - The movie object to display.
+ * @returns - A JSX element representing the Movie component.
+ */
 export function Movie({ movie }: { movie: IMovie }) {
     return (
         <div className="flex-col w-[200px]">
