@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movies Page
 
-## Getting Started
+This is a technical test for the position of Junior Frontend Developer at [Kai Evolve S.A.S.](https://www.linkedin.com/company/kaievolve/) The project consist in a web app to search movies usign the api [OMDb](https://www.omdbapi.com/)
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Preview](./public/Preview.PNG)
+
+## Features
+
+-   Pagination for show all the data searched
+-   Automatic request when you type something in the search bar
+
+## Technologies
+
+-   [Next.js](https://nextjs.org/): The react framework for the web
+- [Tailwindcss](https://v2.tailwindcss.com/): A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+- [Shadcn/UI](https://ui.shadcn.com/): Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+- [React Icons](https://react-icons.github.io/react-icons/): Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+
+## Installation
+
+1. Clone the repository
+
+```
+git clone https://github.com/movies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install all dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Run the project
 
-## Learn More
+```
+pnpm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. For default, the page will be shown here. [Click me](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you don't want to install the project, you can see a demo deployment here. [Demo](https://movies-page.pages.dev)
