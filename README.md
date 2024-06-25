@@ -49,4 +49,4 @@ pnpm run dev
 
 ## Demo
 
-If you don't want to install the project, you can see a demo deployment here. [Demo](https://movies-page.pages.dev)
+If you don't want to install the project, you can see a demo deployment here. [Demo](https://movies-pages.pages.dev)
