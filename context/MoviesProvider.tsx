@@ -49,6 +49,11 @@ export function MoviesProvider({ children }: { children: ReactNode }) {
     // useDebounce hook to wait a short time before make the request
     const debounce = useDebounce(search);
 
+    // Effect to reset the page to 1 when the search term changes
+    useEffect(() => {
+        setPage(1);
+    }, [search]);
+
     // Effect to fetch movies from the API based on search and pagination
     useEffect(() => {
         if (debounce !== undefined) {
@@ -60,7 +65,6 @@ export function MoviesProvider({ children }: { children: ReactNode }) {
                     if (res.data.Search && res.data.totalResults) {
                         setMovies(res.data.Search);
                         setMaxPages(Math.ceil(res.data.totalResults / 10));
-                        setPage(1);
                     } else {
                         setMovies([]);
                         setMaxPages(1);
